@@ -1,0 +1,70 @@
+@import "variables";
+
+#signupForm {
+	background-color: $GREY;
+}
+
+.user-form {
+	width: 100%;
+	max-width: 330px;
+	padding: 15px;
+	margin: auto;
+}
+
+.user-form >.long-message {
+	padding-left: 3px;
+	text-align: left;
+}
+
+.user-form {
+	.checkbox {
+		//equivalent of .user-form .checkbox without nesting
+		padding-left: 22px;
+		text-align: left;
+	}
+}
+
+.user-form .form-control {
+	position: relative;
+	box-sizing: border-box;
+	height: auto;
+	padding: 10px;
+	font-size: 16px;
+}
+
+.user-form .form-control:focus {
+	z-index: 2;
+}
+
+.user-form .form-field-first {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+}
+
+.user-form input[type="text"], input[type="password"], input[type="email"] {
+	-webkit-box-shadow: none;
+	margin-bottom: -1px;
+}
+
+.user-form .form-field-between {
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+
+.user-form .form-field-last {
+	margin-bottom: 10px;
+	border-top-left-radius: 0; 
+	border-top-right-radius: 0;
+}
+
+.user-form .redirect-message {
+	padding-top: 5px;
+}
+
+@media (max-width: 460px) {
+	.user-form {
+		max-width: 200px;
+	}
+}
